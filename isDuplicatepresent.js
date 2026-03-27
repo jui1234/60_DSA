@@ -14,4 +14,5 @@ export function isDuplicatePresent(arr) {
 // console.log(isDuplicatePresent([1,2,3,4,5]));
 // console.log(isDuplicatePresent([1,2,3,4,5,1])); 
 // console.log(isDuplicatePresent([4,2,3,1,1]));
-console.log(undefined||0)+1
+
+// console.log(undefined||0)+1

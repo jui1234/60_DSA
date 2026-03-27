@@ -1,23 +1,31 @@
- export function isAnagrams(str1, str2) {
-    if(str1.length !== str2.length) {
-        return false;
-    }
+//  export function isAnagrams(str1, str2) {
+//    if(str1.length !== str2.length) return false;
+//    const count={};
+//    for(let char of str1){
+//     count[char]=(count[char]||0)+1
+//    }
 
-     let count={};
-     for(let char of str1){
+//    for(let char of str2){
+//     if(!count[char])return false;
+//     count[char]--;
+//    }
+//    return true;
+// }
+
+var isAnagram = function(s, t) {
+    if(s.length !==t.length)return false;
+    const count={};
+    for(let char of s){
         count[char]=(count[char]||0)+1;
-     }
-
-     for(let char of str2){
-        if(!count[char]){
-            return false;
-        }
+    }
+    for(let char of t){
+        if(!count[char])return false;
         count[char]--;
-     }
-        return true;
-}
+    }
+    return true
+};
 
-console.log(isAnagrams("listen","silent"));
-console.log(isAnagrams("hello","world"));   
-console.log(isAnagrams("anagram","nagaram"));
-console.log(isAnagrams("rat","car"));
+console.log(isAnagram("listen","silent"));
+console.log(isAnagram("hello","olleh"));   
+console.log(isAnagram("anagram","nagaram"));
+console.log(isAnagram("rat","car"));
