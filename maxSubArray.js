@@ -9,7 +9,7 @@ var maxSubArray = function(nums) {
         }
 
         if(currentsum<0){
-            currentsum=0;
+            currentsum=0;//his is only for -ve numbers if we have all -ve numbers then we will return the max -ve number as the answer
         }
 
     }
