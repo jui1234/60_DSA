@@ -18,3 +18,4 @@ var isHappy = function(n) {
 
 console.log(isHappy(19))
 console.log(isHappy(2))
+console.log(isHappy(7))
