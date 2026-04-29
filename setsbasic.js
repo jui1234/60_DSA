@@ -9,6 +9,7 @@ var setbasics =function(){
     console.log("delete from set",myset.delete(3));
     console.log("check if number is present in set",myset.has(5));
     console.log("size of set",myset.size);
+    console.log("to get the values of set",myset.values());
     myset.clear();
     // console.log("clear the set",myset.clear());
     return myset;
